@@ -1,0 +1,212 @@
+.slider-whyWe {
+    margin-top: 3em;
+    display: flex;
+    min-width: 0;
+
+    .sert {
+        margin-top: 1em;
+        display: flex;
+        align-items: center;
+        img {
+            max-width: 3em;
+        }
+        a {
+           color: #000;
+        }
+    }
+
+    .slick-list {
+        overflow: hidden;
+    }
+
+    .slick-track {
+        display: flex;
+
+    }
+
+    &__item {
+        display: flex !important;
+        min-width: 0;
+    }
+
+    &__img {
+        min-width: 0;
+        flex-basis: 55%;
+
+        img {
+            width: 100%;
+           max-height: 550px;
+           height: 100%;
+        }
+    }
+
+    &__descr {
+        flex-basis: 30%;
+        background-color: #f4f4f4;
+        min-width: 0;
+        border-bottom: 6em solid #4f7f0e;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+
+    }
+
+    &__li:not(:first-child) {
+        margin-top: 1em;
+    }
+}
+
+.text-bold {
+    font-weight: 700;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.container-max {
+    position: relative;
+}
+
+.arrows-container {
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    right: 35%;
+    bottom: 1.8em;
+    transform: translateX(50%);
+
+    .slick-prev {
+        background-image: url(../img/arrow-fff.png);
+        background-size: contain;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        transform: rotate(180deg);
+        width: 100%;
+        font-size: 0;
+        width: 45px;
+        height: 25px;
+        margin-right: 15px;
+        transition: all .3s;
+     
+    
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.263);
+            border-radius: 5px;
+          
+        }
+
+        &:focus {
+            outline: 2px solid rgba(204, 204, 204, 0.11);
+        }
+    
+
+    }
+
+    .slick-next {
+        background-image: url(../img/arrow-fff.png);
+        background-size: contain;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        width: 100%;
+        font-size: 0;
+        width: 45px;
+        height: 25px;
+        transition: all .3s;
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.263);
+            border-radius: 5px;
+          
+        }
+
+        &:focus {
+            outline: 2px solid rgba(204, 204, 204, 0.11);
+        }
+    }
+
+    .slick-dots {
+        display: flex;
+        transform: translateY(-25%);
+        margin-left: 1em;
+
+        li {
+            margin-left: 1em;
+
+        }
+
+        .slick-active {
+                button {
+                    background-color: #fff;
+                }
+        }
+
+        button {
+            font-size: 0;
+            background-color: rgba(255, 255, 255, 0.582);
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .arrows-container {
+        right: 32%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .arrows-container {
+        position: static;
+        right: 0;
+        bottom: 0;
+        transform: none;
+        max-width: 100%;
+        background-color: #4f7f0e;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2em;
+        padding-top: 2em;
+    }
+    .container-max {
+        max-width: 768px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .slider-whyWe {
+        &__item {
+            flex-direction: column;
+            min-height: 550px;
+            justify-content: flex-end;
+        
+        }
+
+        &__img {
+            flex-basis: 100%;
+            border-bottom: 5px solid #4f7f0e;
+
+            img {
+               
+                max-height: 100%;
+                margin-bottom: -6px;
+            }
+        }
+
+        &__descr {
+            flex-basis: 100%;
+            border: none;
+        }
+        
+    }
+}

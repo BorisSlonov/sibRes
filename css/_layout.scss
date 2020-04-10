@@ -1,0 +1,34 @@
+//style
+
+html,
+body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(.55em + .55vw);
+    line-height: 1.5;
+}
+.container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-max {
+    max-width: 1980px;
+   
+}
+
+@media (min-width:1440px) {
+    html,
+    body {
+        font-size: calc(.5em + .4vw);
+    }
+}
+
+@media (max-width: 425px) {
+    html,
+    body {
+        font-size: 12px;
+    }
+}
