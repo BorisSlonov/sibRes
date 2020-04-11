@@ -1120,6 +1120,9 @@ select {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .container-1980 .contact-form {
+    margin: 0 auto;
+  }
   .container-1980 .bg-white::before {
     display: none;
   }
