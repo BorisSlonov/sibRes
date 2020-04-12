@@ -17,6 +17,15 @@
     .slick-track {
         display: flex;
 
+      
+
+    }
+
+    .slick-prev {
+        flex-basis: 7.5%;
+    }
+    .slick-next {
+        flex-basis: 7.5%;
     }
 
     .catalog-item {

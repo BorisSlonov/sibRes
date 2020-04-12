@@ -25,7 +25,16 @@
     box-shadow: 6px 8px 24px rgba(4, 4, 4, 0.16);
     height: 50%;
 
+    &__tUp {
+        width: 100%;
+        max-width: .65em;
+        max-height: .45em;
+        margin-right: 5%;
+    }
 
+    &__greenDot {
+        margin-right: .5em;
+    }
 
     &__title {
         display: flex;
@@ -40,12 +49,7 @@
         color: #000;
         font-weight: 700;
 
-        img {
-            width: 100%;
-            max-width: .65em;
-            max-height: .45em;
-            margin-right: 5%;
-        }
+       
 
 
         &:hover {

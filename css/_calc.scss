@@ -1,6 +1,17 @@
 .container-1980 {
     display: flex;
 
+    .btn-container {
+        margin-top: 1.5em;
+
+        .main-btn {
+            width: 100%;
+            max-width: 320px;
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+    }
+
     .h2-container {
         &__title {
             font-weight: 400;
@@ -85,16 +96,7 @@
             margin-top: 1.5em;
         }
 
-        .btn-container {
-            margin-top: 1.5em;
-
-            .main-btn {
-                width: 100%;
-                max-width: 280px;
-                padding-top: 1em;
-                padding-bottom: 1em;
-            }
-        }
+       
 
 
 
@@ -158,6 +160,7 @@ select {
 }
 
 .custom-select__current {
+    display: block;
     width: 100%;
     border: 1px solid #ccc;
     padding: 10px;
@@ -193,7 +196,7 @@ select {
     margin-top: 5px;
     border-radius: 3px;
     display: none;
-    max-width: 200px;
+    max-width: 195px;
 }
 
 .custom-select__item {
@@ -201,10 +204,9 @@ select {
     cursor: pointer;
     background-color: #fff;
     border: none;
-    display: inline-block;
+    display: block;
     width: 100%;
-    max-width: 200px;
-
+    
 }
 
 .custom-select__item:hover,
