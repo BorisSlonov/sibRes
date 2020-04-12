@@ -33,7 +33,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        min-height: 100px;
+        height: 80px;
         background-color: #fff;
     }
 
@@ -76,7 +76,7 @@
 
 
 .logo-img {
-    max-width: 140px;
+    max-width: 115px;
     width: 100%;
     border-right: 1px solid rgba(0, 0, 0, 0.178);
     padding-right: 2.5em;
@@ -94,7 +94,7 @@
     display: flex;
     justify-content: space-between;
     background-image: url(../img/header-green.png);
-    min-height: 100px;
+    min-height: 80px;
     height: 100%;
     flex-basis: 65%;
 }

@@ -4,7 +4,7 @@ html,
 body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-size: calc(.55em + .55vw);
+    font-size: 15px;
     line-height: 1.5;
 }
 .container {
@@ -28,6 +28,20 @@ body {
     html,
     body {
         font-size: calc(.5em + .4vw);
+    }
+}
+
+@media (max-width:1024px) {
+    html,
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:768px) {
+    html,
+    body {
+        font-size: 13px;
     }
 }
 
