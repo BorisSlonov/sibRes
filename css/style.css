@@ -309,7 +309,7 @@ body {
 
 .h2-container {
   text-align: center;
-  margin-top: 2.5em;
+  margin-top: 2em;
 }
 
 .h2-container__title {
@@ -620,7 +620,7 @@ body {
   margin-right: 0.75em;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header-content {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -640,7 +640,7 @@ body {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 605px) {
   .header-phone {
     display: block;
   }
@@ -684,6 +684,19 @@ body {
   }
 }
 
+.page-catalog {
+  background-image: url(../img/catalog/bg-catalog.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+@media (max-width: 425px) {
+  .page-catalog {
+    background-size: cover;
+    background-position: 45% 50%;
+  }
+}
+
 .catalog {
   width: 100%;
   display: -webkit-box;
@@ -692,6 +705,10 @@ body {
   min-width: 0;
   padding: 3em 0;
   font-size: 1rem;
+}
+
+.catalog .catalog-item {
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 .catalog .slick-list {
@@ -708,11 +725,13 @@ body {
 .catalog .slick-prev {
   -ms-flex-preferred-size: 7.5%;
       flex-basis: 7.5%;
+  background-color: transperent;
 }
 
 .catalog .slick-next {
   -ms-flex-preferred-size: 7.5%;
       flex-basis: 7.5%;
+  background-color: transperent;
 }
 
 .catalog .catalog-item {
@@ -740,6 +759,7 @@ body {
 .catalog .catalog-item__title {
   padding-top: 2em;
   padding-bottom: 2em;
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 .catalog .catalog-item__link {
@@ -921,6 +941,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 1.5em 0;
 }
 
 .container-1980 .btn-container {
@@ -1426,8 +1447,11 @@ select {
 }
 
 .section-answer {
+  background-image: url(../img/bg-quest.png);
+  background-size: contain;
+  background-position: top top;
   padding-bottom: 75px;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .section-answer .h2-container {
@@ -1437,6 +1461,12 @@ select {
 
 .section-answer .h2-container__title {
   font-size: 2rem;
+}
+
+@media (max-width: 425px) {
+  .section-answer .h2-container {
+    background-color: rgba(255, 255, 255, 0.95);
+  }
 }
 
 .answer-container {
@@ -1488,6 +1518,7 @@ select {
   padding-bottom: 30px;
   color: #000;
   font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.945);
 }
 
 .answer-item__title:hover {
@@ -1500,6 +1531,7 @@ select {
   padding-left: 1em;
   padding-bottom: 2em;
   display: none;
+  background-color: rgba(255, 255, 255, 0.507);
 }
 
 .answer-item__title.activeA {

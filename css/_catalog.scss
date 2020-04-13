@@ -1,6 +1,23 @@
 
+.page-catalog {
+    background-image: url(../img/catalog/bg-catalog.png);
+    background-size: cover;
+    background-position: 50% 50%;
 
+}
+
+@media (max-width:425px) {
+    .page-catalog {
+        background-size: cover;
+        background-position: 45% 50%;
+    }
+}
 .catalog {
+
+    .catalog-item{
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+
     width: 100%;
     display: flex;
     min-width: 0;
@@ -16,16 +33,15 @@
 
     .slick-track {
         display: flex;
-
-      
-
     }
 
     .slick-prev {
         flex-basis: 7.5%;
+        background-color: transperent;
     }
     .slick-next {
         flex-basis: 7.5%;
+        background-color: transperent;
     }
 
     .catalog-item {
@@ -47,6 +63,7 @@
         &__title {
             padding-top: 2em;
             padding-bottom: 2em;
+            background-color: rgba(255, 255, 255, 0.95);
         }
 
         &__link {
