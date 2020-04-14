@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Title</title>
 </head>
@@ -117,7 +118,7 @@
                         </span>
                     </div>
                     <div class="btn-container">
-                        <button class='main-btn'>
+                        <button data-fancybox data-src='#popup1-container' class='main-btn'>
                             <span>Заказать</span>
                         </button>
                     </div>
@@ -148,6 +149,56 @@
 
 
 
+
+
+    <!-- 1-popup -->
+
+    <div id="popup1-container">
+        <div class="popup1">
+            <!-- h2-container -->
+            <div class="h2-container">
+                <span class='h2-container__span'>Оставьте заявку на расчеты
+                    и подробную консультацию
+                </span>
+                <h2 class='h2-container__title'><span>Заказать расчеты</span></h2>
+            </div>
+            <!-- h2-container -->
+
+
+            <form class='popup1__form' action="#">
+                <input type="name" placeholder="Имя">
+                <input type="tel" placeholder="Телефон">
+                <button class="main-btn">
+                    <span>Заказать звонок</span>
+                </button>
+
+                <span class='popup1__shadow'>Заказать звонок
+                    Оставьте заявку на расчет и
+                    подробную консультацию</span>
+            </form>
+
+
+            <div class="popup1-descr">
+                <span class="popup1-descr__span">
+                    Если остались вопросы,
+                    позвоните нам мы с радостью ответим на них
+                </span>
+                <a href="#">
+                    <span class="popup1-descr__tel">
+                        8-913-88-90-292
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1-popup -->
+
+
+
+
+
+
     <!-- catalog -->
     <section class="page-catalog">
         <!-- h2-container -->
@@ -174,7 +225,7 @@
                     <!-- img -->
                     <!-- link -->
                     <div class='catalog-item__link'>
-                        <a href="#">
+                        <a data-fancybox data-src='#pelette-container' href='#'>
                             <span class='link-hover'>
                                 Цена и характеристика
                             </span>
@@ -206,7 +257,7 @@
                     <!-- img -->
                     <!-- link -->
                     <div class='catalog-item__link'>
-                        <a href="#">
+                        <a data-fancybox data-src='#brick-container' href="#">
                             <span class='link-hover'>
                                 Цена и характеристика
                             </span>
@@ -258,6 +309,443 @@
         </div>
     </section>
     <!-- catalog -->
+
+
+
+
+    <!-- pelette-container -->
+    <div id="pelette-container">
+        <div class="product">
+            <!-- row -->
+            <div class="product__row">
+                <!-- item -->
+                <div class="product__item">
+                    <!-- img -->
+                    <div class="product__img">
+                        <img src="img/pelette-light.png" alt="">
+                    </div>
+                    <!-- img -->
+
+                    <!-- title -->
+                    <div class="product__title">
+                        <h3>Пеллеты светлые</h3>
+                        <span>Можно купить любой объем, начиная от одной пачки.</span>
+                    </div>
+                    <!-- title -->
+
+
+                    <!-- params -->
+                    <div class="product__params">
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                    </div>
+                    <!-- params -->
+
+
+
+                    <!-- price -->
+                    <div class="price">
+                        <span class="price__cost bold">
+                            Стоимость
+                        </span>
+                        <div class="price__item-container">
+                            <div class="price__item">
+                                <span>1уп</span>
+                                <span class='bold'>250 руб</span>
+                            </div>
+                            <div class="price__item">
+                                <span>1 тонна</span>
+                                <span class='bold'>6500 руб</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- price -->
+                </div>
+                <!-- item -->
+
+
+                <!-- item -->
+                <div class="product__item">
+                    <!-- img -->
+                    <div class="product__img">
+                        <img src="img/pelette-dark.png" alt="">
+                    </div>
+                    <!-- img -->
+
+                    <!-- title -->
+                    <div class="product__title">
+                        <h3>Пеллеты темные</h3>
+                        <span>Можно купить любой объем, начиная от одной пачки.</span>
+                    </div>
+                    <!-- title -->
+
+
+                    <!-- params -->
+                    <div class="product__params">
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                    </div>
+                    <!-- params -->
+
+
+
+                    <!-- price -->
+                    <div class="price">
+                        <span class="price__cost bold">
+                            Стоимость
+                        </span>
+                        <div class="price__item-container">
+                            <div class="price__item">
+                                <span>1уп</span>
+                                <span class='bold'>250 руб</span>
+                            </div>
+                            <div class="price__item">
+                                <span>1 тонна</span>
+                                <span class='bold'>6500 руб</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- price -->
+                </div>
+                <!-- item -->
+
+
+            </div>
+            <!-- row -->
+            <div class="popup1-descr">
+                <span class="popup1-descr__span">
+                    Если остались вопросы,
+                    позвоните нам мы с радостью ответим на них
+                </span>
+                <a href="#">
+                    <span class="popup1-descr__tel">
+                        8-913-88-90-292
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!-- product -->
+    </div>
+    <!-- pelette-container -->
+
+
+
+
+    <!-- brick-container -->
+    <div id="brick-container">
+        <div class="product">
+            <!-- row -->
+            <div class="product__row">
+                <!-- item -->
+                <div class="product__item">
+                    <!-- img -->
+                    <div class="product__img">
+                        <img src="img/nestro.png" alt="">
+                    </div>
+                    <!-- img -->
+
+                    <!-- title -->
+                    <div class="product__title">
+                        <h3>Брикет NESTRO</h3>
+                        <span>Можно купить любой объем, начиная от одной пачки.</span>
+                    </div>
+                    <!-- title -->
+
+
+                    <!-- params -->
+                    <div class="product__params">
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                    </div>
+                    <!-- params -->
+
+
+
+                    <!-- price -->
+                    <div class="price">
+                        <span class="price__cost bold">
+                            Стоимость
+                        </span>
+                        <div class="price__item-container">
+                            <div class="price__item">
+                                <span>1уп</span>
+                                <span class='bold'>250 руб</span>
+                            </div>
+                            <div class="price__item">
+                                <span>1 тонна</span>
+                                <span class='bold'>6500 руб</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- price -->
+                </div>
+                <!-- item -->
+
+
+                <!-- item -->
+                <div class="product__item">
+                    <!-- img -->
+                    <div class="product__img">
+                        <img src="img/ruf.png" alt="">
+                    </div>
+                    <!-- img -->
+
+                    <!-- title -->
+                    <div class="product__title">
+                        <h3>Брикет RUF</h3>
+                        <span>Можно купить любой объем, начиная от одной пачки.</span>
+                    </div>
+                    <!-- title -->
+
+
+                    <!-- params -->
+                    <div class="product__params">
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                    </div>
+                    <!-- params -->
+
+
+
+                    <!-- price -->
+                    <div class="price">
+                        <span class="price__cost bold">
+                            Стоимость
+                        </span>
+                        <div class="price__item-container">
+                            <div class="price__item">
+                                <span>1уп</span>
+                                <span class='bold'>250 руб</span>
+                            </div>
+                            <div class="price__item">
+                                <span>1 тонна</span>
+                                <span class='bold'>6500 руб</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- price -->
+                </div>
+                <!-- item -->
+            </div>
+            <!-- row -->
+
+            <div class="product__row">
+                <!-- item -->
+                <div class="product__item">
+                    <!-- img -->
+                    <div class="product__img">
+                        <img src="img/piniKey.png" alt="">
+                    </div>
+                    <!-- img -->
+
+                    <!-- title -->
+                    <div class="product__title">
+                        <h3>Брикет Pini Key</h3>
+                        <span>Можно купить любой объем, начиная от одной пачки.</span>
+                    </div>
+                    <!-- title -->
+
+
+                    <!-- params -->
+                    <div class="product__params">
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                        <div class="product__param">
+                            <span class='bold'>Размеры</span>
+                            <span>6-8мм</span>
+                        </div>
+                        <!-- item -->
+                    </div>
+                    <!-- params -->
+
+
+
+                    <!-- price -->
+                    <div class="price">
+                        <span class="price__cost bold">
+                            Стоимость
+                        </span>
+                        <div class="price__item-container">
+                            <div class="price__item">
+                                <span>1уп</span>
+                                <span class='bold'>250 руб</span>
+                            </div>
+                            <div class="price__item">
+                                <span>1 тонна</span>
+                                <span class='bold'>6500 руб</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- price -->
+                </div>
+                <!-- item -->
+            </div>
+
+            <div class="popup1-descr">
+                <span class="popup1-descr__span">
+                    Если остались вопросы,
+                    позвоните нам мы с радостью ответим на них
+                </span>
+                <a href="#">
+                    <span class="popup1-descr__tel">
+                        8-913-88-90-292
+                    </span>
+                </a>
+            </div>
+
+        </div>
+
+        
+    </div>
+    <!-- brick-container -->
+
+
+
+
+
+
+
+
 
 
 
@@ -800,7 +1288,7 @@
                             <img class='answer-item__greenDot' src="img/green-dot.png" alt="">
                             Есть ли доставка?
                         </span>
-                    
+
                     </div>
                     <div class="answer-item__text">
                         Да, у нас есть оптовые клиенты. При покупке от 20 тонн действует спец. цена (обсуждается
@@ -816,7 +1304,7 @@
                             Какие условия хранения
                             пеллет и брикетов
                         </span>
-                    
+
                     </div>
                     <div class="answer-item__text">
                         Да, у нас есть оптовые клиенты. При покупке от 20 тонн действует спец. цена (обсуждается
@@ -976,6 +1464,10 @@
     <!-- slick -->
     <script src='js/slick.js'></script>
     <!-- slick -->
+
+    <!-- fancybox -->
+    <script src='fancybox/jquery.fancybox.js'></script>
+    <!-- fancybox -->
 
     <script src='js/main.js'></script>
 </body>

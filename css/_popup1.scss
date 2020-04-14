@@ -1,0 +1,73 @@
+#popup1-container {
+    display: none;
+}
+
+.popup1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .h2-container {
+        &__title {
+      
+            font-size: 1.2rem;
+            margin-top: 1em;
+            margin-bottom: 2em;
+        }
+
+        &__span {
+            font-weight: 700;
+            font-size: 1.4rem;
+            max-width: 80%;
+            display: inline-block;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+
+        input {
+            padding-top: .75em;
+            padding-bottom: 0.75em;
+            padding-left: 1em;
+            border: 1px solid #dcdcdc;
+            margin-top: 1em;
+        }
+    }
+
+    &__shadow {
+        color: rgba(0, 0, 0, 0.404);
+        display: inline-block;
+        margin-top: 1.5em;
+    }
+
+    .main-btn {
+        margin-top: 1em;
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+    }
+}
+
+.popup1-descr {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid  #aeaeae;
+    margin-top: 2em;
+    padding-top: 2em;
+
+    &__tel {
+        font-weight: 700;
+        font-size: 1.4rem;
+        color: #000;
+    }
+}
+
+@media(max-width:425px) {
+    .fancybox-content {
+        padding: 1em;
+    }
+}
