@@ -123,6 +123,26 @@ $(document).ready(function () {
   $('.catalog').slick({
     slidesToShow: 3,
     arrows: false,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 768, // - от какой ширины изменять настройки(1024 и ниже)
+        settings: {
+          // вносим изменения на ширине 1024 и ниже 
+          slidesToShow: 1,
+          arrows: true
+
+        }
+      }
+    ]
+
+  });
+
+
+  $('.product__row').slick({
+    slidesToShow: 1,
+    arrows: true,
+    infinite: false,
     responsive: [
       {
         breakpoint: 768, // - от какой ширины изменять настройки(1024 и ниже)
