@@ -959,7 +959,7 @@ body {
   overflow: hidden;
   width: 100%;
   position: relative;
-  max-width: 350px;
+  max-width: 420px;
 }
 
 .product__row .slick-track {
@@ -971,6 +971,19 @@ body {
 .product__row .slick-slide {
   width: 100%;
   min-width: 0;
+}
+
+.product__row .slick-slide > div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .product__row .slick-prev {
@@ -1002,7 +1015,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 420px;
+  padding: 0 10px;
 }
 
 .product__img img {
