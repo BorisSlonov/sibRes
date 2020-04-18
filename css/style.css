@@ -269,6 +269,7 @@ body {
 
 .link-hover {
   position: relative;
+  outline: none;
 }
 
 .link-hover::after {
@@ -345,6 +346,11 @@ body {
 
 .h2-container__span {
   font-size: 2rem;
+}
+
+.popupOpen,
+.popupOpen2 {
+  outline: none;
 }
 
 @media (max-width: 520px) {
@@ -1020,6 +1026,7 @@ body {
   height: 20px;
   font-size: 0;
   background-color: #fff;
+  outline: none;
 }
 
 .product__row .slick-next, .product__row2 .slick-next {
@@ -1031,6 +1038,7 @@ body {
   height: 20px;
   font-size: 0;
   background-color: #fff;
+  outline: none;
 }
 
 .product__row:not(:first-child) {
@@ -1104,21 +1112,6 @@ body {
 
 .bold {
   font-weight: 700;
-}
-
-@media (max-width: 767px) {
-  .product__row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .product__item:not(:first-child) {
-    margin-top: 3.5em;
-  }
 }
 
 .page-advantages {

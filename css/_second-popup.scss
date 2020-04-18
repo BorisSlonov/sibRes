@@ -8,7 +8,6 @@
 
 .product {
     line-height: 1.5;
-
     max-width: 360px;
 
    
@@ -79,6 +78,7 @@
             height: 20px;
             font-size: 0;
             background-color: #fff;
+            outline: none;
         }
     
         .slick-next {
@@ -90,6 +90,7 @@
             height: 20px;
             font-size: 0;
             background-color: #fff;
+            outline: none;
        
         }
     
@@ -156,17 +157,4 @@
 
 .bold {
     font-weight: 700;
-}
-
-@media (max-width: 767px) {
-    .product {
-        &__row {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        &__item:not(:first-child) {
-            margin-top: 3.5em;
-        }
-    }
 }

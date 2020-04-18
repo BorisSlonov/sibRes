@@ -141,7 +141,6 @@ $(document).ready(function () {
 
 
 
-
   //Slick Slider
   $('.slider-whyWe').slick({
     infinite: true,
@@ -164,13 +163,6 @@ $(document).ready(function () {
     ]
 
   });
-
-
-
-
-
-
-
 
 
 

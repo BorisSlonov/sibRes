@@ -1,5 +1,6 @@
 .link-hover {
     position: relative;
+    outline: none;
 
     &::after {
         content: '';
@@ -75,6 +76,10 @@
     }
 }
 
+.popupOpen,
+.popupOpen2 {
+    outline: none;
+}
 @media (max-width: 520px) {
     .h2-container {
         &__title {
