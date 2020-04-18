@@ -940,9 +940,10 @@ body {
 
 .product {
   line-height: 1.5;
+  max-width: 360px;
 }
 
-.product__row {
+.product__row, .product__row2 {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -955,25 +956,25 @@ body {
           justify-content: center;
 }
 
-.product__row .slick-list {
+.product__row .slick-list, .product__row2 .slick-list {
   overflow: hidden;
   width: 100%;
   position: relative;
-  max-width: 420px;
+  max-width: 300px;
 }
 
-.product__row .slick-track {
+.product__row .slick-track, .product__row2 .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.product__row .slick-slide {
+.product__row .slick-slide, .product__row2 .slick-slide {
   width: 100%;
   min-width: 0;
 }
 
-.product__row .slick-slide > div {
+.product__row .slick-slide > div, .product__row2 .slick-slide > div {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -986,16 +987,50 @@ body {
           align-items: center;
 }
 
-.product__row .slick-prev {
+.product__row .slick-prev, .product__row2 .slick-prev {
   -ms-flex-preferred-size: 7.5%;
       flex-basis: 7.5%;
   background-color: transperent;
 }
 
-.product__row .slick-next {
+.product__row .slick-next, .product__row2 .slick-next {
   -ms-flex-preferred-size: 7.5%;
       flex-basis: 7.5%;
   background-color: transperent;
+}
+
+.product__row .slick-prev, .product__row2 .slick-prev {
+  -ms-flex-preferred-size: 7.5%;
+      flex-basis: 7.5%;
+  background-color: transperent;
+}
+
+.product__row .slick-next, .product__row2 .slick-next {
+  -ms-flex-preferred-size: 7.5%;
+      flex-basis: 7.5%;
+  background-color: transperent;
+}
+
+.product__row .slick-prev, .product__row2 .slick-prev {
+  background-image: url(../img/slider-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 100%;
+  height: 20px;
+  font-size: 0;
+  background-color: #fff;
+}
+
+.product__row .slick-next, .product__row2 .slick-next {
+  background-image: url(../img/slider-arrow-r.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 100%;
+  height: 20px;
+  font-size: 0;
+  background-color: #fff;
 }
 
 .product__row:not(:first-child) {
@@ -1020,7 +1055,7 @@ body {
 
 .product__img img {
   width: 100%;
-  max-width: 420px;
+  max-width: 300px;
   height: 100%;
 }
 
