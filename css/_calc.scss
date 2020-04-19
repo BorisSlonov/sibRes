@@ -7,10 +7,13 @@
 
         .main-btn {
             width: 100%;
-            max-width: 320px;
-            padding-top: 1em;
-            padding-bottom: 1em;
+            padding-top: .75em;
+            padding-bottom: .75em;
         }
+    }
+
+    #btn-calc {
+        max-width: 200px;
     }
 
     .h2-container {
@@ -28,6 +31,24 @@
             display: inline-block;
             text-align: left;
         }
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 280px;
+        width: 100%;
+        margin-left: 2em;
+
+        input {
+            padding-top: 1em;
+            padding-bottom: 1em;
+            padding-left: 1.4em;
+        }
+
+        input:not(:first-child) {
+            margin-top: 1.5em;
+        }
+
     }
 
     .bg-white {
@@ -75,38 +96,13 @@
             height: 60%;
             right: 0 !important;
             bottom: 0 !important;
-
-       
         }
-    }
-
-    .contact-form {
-        display: flex;
-        flex-direction: column;
-        max-width: 280px;
-        width: 100%;
-        margin-left: 2em;
-
-        input {
-            padding-top: 1em;
-            padding-bottom: 1em;
-            padding-left: 1.4em;
-        }
-
-        input:not(:first-child) {
-            margin-top: 1.5em;
-        }
-
-       
-
-
-
     }
 
 
     .form-descr {
         display: inline-block;
-        margin-top: 3em;
+        margin-top: 8em;
         margin-left: 2em;
         color: rgba(255, 255, 255, 0.582);
         max-width: 50%;
@@ -146,7 +142,8 @@ select {
 
     label {
         display: inline-block;
-        width: 30%;
+        width: 100%;
+        max-width:200px;
     }
 }
 
@@ -162,10 +159,8 @@ select {
 
 .custom-select__current {
     display: block;
-    width: 100%;
-    border: 1px solid #ccc;
+    width: 200px;
     padding: 10px;
-    border-radius: 3px;
     position: relative;
     cursor: pointer;
     box-shadow: 0 0 5px 3px rgba(204, 204, 204, 0.2);
@@ -197,7 +192,7 @@ select {
     margin-top: 5px;
     border-radius: 3px;
     display: none;
-    max-width: 195px;
+    max-width: 200px;
 }
 
 .custom-select__item {
@@ -210,12 +205,22 @@ select {
     
 }
 
-.custom-select__item:hover,
-.custom-select__item:focus {
-    background-color: #e6e6e6;
+
+@media(max-width:1076px) {
+    .container-1980 {
+        .bg-white {
+            &::before {
+                width: 20%;
+                top: 70%;
+            }
+        }
+    }
 }
 
-@media (max-width: 768px) {
+
+
+
+@media (max-width: 900px) {
     .container-1980 {
         flex-direction: column;
 
@@ -266,5 +271,42 @@ select {
             text-align: left;
         }
     
+    }
+}
+
+
+
+
+
+.input-calc {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+
+.output {
+    max-width: 320px;
+    margin-left: auto;
+    text-align: left;
+    margin-top: 1em;
+    &__span {
+        max-width: 320px;
+    }
+
+    label {
+        border-bottom: 1px solid #000;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:900px) {
+    .output {
+        margin-right: auto;
+      
     }
 }
