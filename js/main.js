@@ -171,7 +171,6 @@ $(document).ready(function () {
     $('.product__row').slick({
       slidesToShow: 1,
       arrows: true,
-      infinite: false,
       responsive: [
         {
           breakpoint: 768, // - от какой ширины изменять настройки(1024 и ниже)
@@ -193,7 +192,6 @@ $(document).ready(function () {
     $('.product__row2').slick({
       slidesToShow: 1,
       arrows: true,
-      infinite: false,
       responsive: [
         {
           breakpoint: 768, // - от какой ширины изменять настройки(1024 и ниже)
@@ -223,6 +221,26 @@ $(document).ready(function () {
     $(this).toggleClass('activeA').next().slideToggle(300);
 
   });
+
+
+  //calc
+
+    jQuery('#btn-calc').click(function() {
+
+      //pelettes/brickets
+
+      var oil = jQuery('#select').val();
+
+      //user
+      var kwmt = jQuery('#kwmt').val();
+      var months = jQuery('#months').val();
+      var score = parseFloat(kwmt * months) * oil;
+      score =  score + "шт" + " " + "расход за период" ;
+      jQuery('.output label').text(score);
+      jQuery('.output').show();
+    });
+  
+
 
 
 });
