@@ -1,18 +1,39 @@
 #pelette-container {
     display: none;
+    max-width: 370px;
 }
 
 #brick-container {
     display: none;
+    max-width: 370px;
 }
 
+#mebel-container {
+    display: none;
+    width: 50%;
+   
+}
+
+@media (max-width:768px) {
+    #mebel-container {
+        width: 75%;
+    }
+}
+@media (max-width:425px) {
+    #mebel-container {
+        width: 85%;
+    }
+}
 .product {
     line-height: 1.5;
-    max-width: 360px;
+ 
 
-   
+
+
+
     &__row,
-    &__row2 {
+    &__row2,
+    &__row3 {
         width: 100%;
         display: flex;
         align-items: center;
@@ -25,29 +46,28 @@
             width: 100%;
             position: relative;
             max-width: 300px;
-       
+
         }
-    
+
         .slick-track {
             display: flex;
-     
+
         }
-    
-    
+
+
         .slick-slide {
             width: 100%;
             min-width: 0;
-       
-        
+            height: 100%;
         }
 
-        .slick-slide > div {
+        .slick-slide>div {
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-    
+
 
 
         .slick-prev,
@@ -62,22 +82,20 @@
             font-size: 0;
             background-color: #fff;
             outline: none;
+
             &:hover {
                 cursor: pointer;
             }
         }
+
         .slick-prev {
             background-image: url(../img/slider-arrow.svg);
-         
+
         }
+
         .slick-next {
             background-image: url(../img/slider-arrow-r.svg);
         }
-    }
-
-    &__item {
-        min-width: 0;
-        padding: 0 10px; 
     }
 
     &__img {
@@ -87,6 +105,44 @@
             height: 100%;
         }
     }
+
+    &__row3 {
+        .product__item {
+            width: 100%;
+        }
+
+        .product__img-mebel {
+            width: 100%;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                max-width: 500px;
+                object-fit: contain;
+            }
+        }
+
+        .slick-list {
+            max-width: 600px;
+        }
+    }
+
+
+    .mebel-descr {
+        text-align: center;
+
+        &__title {
+            margin-top: 1em;
+        }
+    }
+
+    &__item {
+        min-width: 0;
+        padding: 0 10px;
+        margin: 0 25px;
+    }
+
+  
 
     &__title {
         h3 {
