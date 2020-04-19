@@ -77,7 +77,7 @@
                                             <a href="#" class='color-fff'>
                                                 <span>8-913-88-90-292</span>
                                             </a>
-                                            <a href="#" class='color-fff'>
+                                            <a href="#"  data-fancybox data-src='#popup1-container' class='color-fff'>
                                                 <span class='link-hover'>Заказать звонок</span>
                                             </a>
                                         </div>
@@ -234,7 +234,7 @@
                     <!-- link -->
                     <!-- btn -->
                     <div class='btn-container'>
-                        <button class='main-btn'>
+                        <button  data-fancybox data-src='#popup1-container' class='main-btn'>
                             <span>Заказать</span>
                         </button>
                     </div>
@@ -257,7 +257,7 @@
                     <!-- img -->
                     <!-- link -->
                     <div class='catalog-item__link'>
-                        <a data-fancybox data-src='#brick-container'  class='popupOpen2' href="#">
+                        <a data-fancybox data-src='#brick-container' class='popupOpen2' href="#">
                             <span class='link-hover'>
                                 Цена и характеристика
                             </span>
@@ -266,7 +266,7 @@
                     <!-- link -->
                     <!-- btn -->
                     <div class='btn-container'>
-                        <button class='main-btn'>
+                        <button  data-fancybox data-src='#popup1-container' class='main-btn'>
                             <span>Заказать</span>
                         </button>
                     </div>
@@ -298,7 +298,7 @@
                     <!-- link -->
                     <!-- btn -->
                     <div class='btn-container'>
-                        <button class='main-btn'>
+                        <button  data-fancybox data-src='#popup1-container' class='main-btn'>
                             <span>Заказать</span>
                         </button>
                     </div>
@@ -977,37 +977,33 @@
                     <div class="select-wrap">
                         <p>Вид топлива</p>
                         <label>
-                            <select class="select" name="select">
-                                <option value="One">пиллеты</option>
-                                <option value="Two">брикеты</option>
-                                < </select>
+                            <select id="select" class="select" name="select">
+                                <option value="16">Пиллеты</option>
+                                <option value="Brickets">Брикеты</option>
+                            </select>
                         </label>
                     </div>
 
                     <div class="select-wrap">
                         <p>Площадь помещения</p>
-                        <label>
-                            <select class="select" name="select1">
-                                <option value="One">40</option>
-                                <option value="Two">80</option>
-                                < </select>
-                        </label>
+                        <input id='kwmt' class='input-calc' type="number" placeholder="">
                     </div>
 
                     <div class="select-wrap">
-                        <p>Высота потолков</p>
-                        <label>
-                            <select class="select" name="select2">
-                                <option value="One">2</option>
-                                <option value="Two">4</option>
-                            </select>
-                        </label>
+                        <p>Кол-во месяцев</p>
+                        <input id='months' class='input-calc' type="number" placeholder="">
                     </div>
 
                     <div class="btn-container">
-                        <button class='main-btn'>
+                        <button id='btn-calc' class='main-btn'>
                             <span>Рассчитать</span>
                         </button>
+                    </div>
+
+
+                    <div class="output">
+                        <span class='output__span'>* Расчет является приблизительным. Более точную информацию уточняйте у менеджера.</span> <br>
+                        <label></label>
                     </div>
                 </div>
             </div>
