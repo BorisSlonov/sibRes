@@ -256,7 +256,7 @@ $(document).ready(function () {
       var kwmt = jQuery('#kwmt').val();
       var months = jQuery('#months').val();
       var score = parseFloat(kwmt * months) * oil;
-      score =  score + "шт" + " " + "расход за период" ;
+      score =  score + "кг" + " " + "расход за период" ;
       jQuery('.output label').text(score);
       jQuery('.output').show();
     });
