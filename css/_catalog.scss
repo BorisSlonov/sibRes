@@ -1,4 +1,3 @@
-
 .page-catalog {
     background-image: url(../img/catalog/bg-catalog.png);
     background-size: cover;
@@ -12,6 +11,7 @@
         background-position: 45% 50%;
     }
 }
+
 .catalog {
 
     width: 100%;
@@ -20,10 +20,10 @@
     padding: 3em 0;
     font-size: 1rem;
 
-    .catalog-item{
+    .catalog-item {
         background-color: rgba(255, 255, 255, 0.95);
     }
-    
+
     .slick-list {
         overflow: hidden;
         width: 100%;
@@ -37,6 +37,7 @@
         flex-basis: 7.5%;
         background-color: transperent;
     }
+
     .slick-next {
         flex-basis: 7.5%;
         background-color: transperent;
@@ -107,8 +108,8 @@
     }
 
 
-    .slick-prev {
-        background-image: url(../img/slider-arrow.svg);
+    .slick-prev,
+    .slick-next {
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
@@ -120,14 +121,11 @@
 
     .slick-next {
         background-image: url(../img/slider-arrow-r.svg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: contain;
-        width: 100%;
-        height: 20px;
-        font-size: 0;
-        background-color: #fff;
-   
+    }
+
+    .slick-prev {
+        background-image: url(../img/slider-arrow-r.svg);
+        transform: rotate(180deg);
     }
 }
 
@@ -136,9 +134,10 @@
         display: flex;
         align-items: center;
     }
+
     .page-catalog {
         .container {
-            padding:5px;
+            padding: 5px;
         }
     }
 }

@@ -6,6 +6,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     line-height: 1.5;
+    zoom: .98;
 }
 .container {
     width: 100%;
@@ -49,5 +50,6 @@ body {
     html,
     body {
         font-size: 12px;
+        zoom: 1;
     }
 }
