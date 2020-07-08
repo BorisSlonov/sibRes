@@ -1,7 +1,12 @@
 .page-catalog {
     background-image: url(../img/catalog/bg-catalog.png);
-    background-size: cover;
+    background-size: contain;
     background-position: 50% 50%;
+
+    .h2-container {
+        margin-top: 0;
+        padding-top: 3em;
+    }
 
 }
 
